@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: college-events-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: NODE_ENV
+        value: production

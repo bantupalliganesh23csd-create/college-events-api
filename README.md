@@ -62,6 +62,24 @@ Development mode:
 npm.cmd run dev
 ```
 
+## Deploy on Render
+
+The repository includes `render.yaml` for a Render web service.
+
+1. Sign in to [Render](https://render.com/).
+2. Create a new Blueprint and select this GitHub repository.
+3. Set the `MONGO_URI` environment variable to your MongoDB Atlas connection string.
+4. Deploy the service named `college-events-api`.
+5. After the first deployment, run `npm.cmd run seed` locally against the production MongoDB URI, or seed the database using a one-off Render shell command.
+
+Render will provide the public dashboard URL after deployment. Add that URL below:
+
+```text
+Live dashboard: pending Render deployment
+```
+
+The deployed dashboard uses `/` and the REST API uses `/api/events` and `/api/students` on the same Render URL.
+
 ## REST API endpoints
 
 ### Events

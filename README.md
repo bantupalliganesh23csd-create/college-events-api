@@ -75,7 +75,7 @@ The repository includes `render.yaml` for a Render web service.
 Render will provide the public dashboard URL after deployment. Add that URL below:
 
 ```text
-Live dashboard: pending Render deployment
+Live dashboard: https://college-events-api-88zl.onrender.com
 ```
 
 The deployed dashboard uses `/` and the REST API uses `/api/events` and `/api/students` on the same Render URL.
